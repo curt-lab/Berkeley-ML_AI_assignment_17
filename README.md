@@ -2,7 +2,7 @@ Practical Assignment 17 - README
 For this assignment we followed the template provided, which was structured along the CRISP-DM framework.
 The technical problem to be solved was to compare multiple models classification models to solve a business problem.  The models to be compared were Logistic Regression,
 KNN (K-Near Neighbor), Decision Tree, and SVM (Support Vector Machines).
-We were given a dataset from a telemarketing campaign to get banking clients to suscribe to a long-term deposit project.
+We were given a dataset from a telemarketing campaign to get banking clients to suscribe to a long-term deposit project from UCI (see https://archive.ics.uci.edu/dataset/222/bank+marketing).  NOTE: There was also supposed to be a link to a paper on the dataset, but that had been removed. 
 The business objective was to determine if the particular client would be likely subscribe (Yes or No) to the product offer.
 The goal would be to focus the telemarketing effort on clients who are predicted as likely to subscribe (Yes).
 We were given a set of 20 features in the full dataset of over 41k samples (records).  Some features related to the client and past interaction with the client.  Some related 
