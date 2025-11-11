@@ -11,10 +11,8 @@ We set a benchmark of 87% accuracy for the majority class (clients saying No to 
 Our models were able to beat that but not by a large margin.  We would probably need to do more feature engineering and data scraping to significantly improve that, but due to the imbalance in the classes (Yes vs. No) it might not improve that significantly.
 The most effective model in our testing was the Decision Tree classifier and it yielded around 89% accuracy on the test dataset.
 The SVM model took a long time to train and did not initially offer significant improvement, so we did not explore that model beyond the initially required investigation.
-The model did actually improve to just over 90% inferring which clients would say Yes when we included a feature called 'duration', however 'duration' was not 
-really viable for a predictive model because it measured how long the client engaged with the telemarketer and that is something that could only be determined after a call
-to the client was made.  Again, we are striving for a model to determine in advance (before a call) is the client likely to be say Yes to the offer.
-The rest of the results are summarized below (also included in the junyper notebook:
+The models did actually perform a little better (to just over 90% accuracy) inferring which clients would say Yes when we included a feature called 'duration', however 'duration' was not really viable for a predictive model because it measured how long the client engaged with the telemarketer and that is something that could only be determined after a call to the client was made.  Again, from a business objective we are striving for a model to determine in advance (before a call) is the client likely to be say Yes to the offer, so we excluded that variable (feature) in our model training.
+The rest of the results comparing the best of the tuned models using GridSearchCV are summarized below (also included in the junyper notebook:
 Model Comparison Results:
                         Train Time	Train Accuracy	Test Accuracy	Best Params
 KNN	                    5.236553	0.881511	0.883694	{'n_neighbors': 9}
