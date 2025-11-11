@@ -7,6 +7,8 @@ BUSINESS OBJECTIVE:
 The business objective was to determine if the particular client would be likely subscribe (Yes or No) to the term deposit product offer.
 The goal would be to focus the telemarketing effort on clients who are predicted as likely to subscribe ('Yes' classification).
 We were given a set of 20 features in the full dataset of over 41k samples (records).  Some features related to the client and past interaction with the client.  Some related to macro-economic factors likely to affect the clients decsion.  (See the variable description list in the jupyter notebook)
+
+MODELING RESULTS:
 We set a benchmark of 87% accuracy for the majority class (would be acheived by just assuming clients say No to the offer).
 Our models were able to beat that benchmark, but not by a large margin.  We would probably need to do more feature engineering and data scraping to improve that, but due to the imbalance in the classes (Yes vs. No) it might not improve that significantly.
 The most effective model in our testing was the Decision Tree classifier and it yielded around 89% accuracy on the test dataset.
