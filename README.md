@@ -13,6 +13,7 @@ The most effective model in our testing was the Decision Tree classifier and it 
 The SVM model took a long time to train and did not initially offer any significant improvement, so we did not explore that model beyond the initially required investigation and focused on doing additional comparisons with models that produced similar results, but with better training times (see bar chart in junyper notebook),
 We noted models did actually perform a little better (to just over 90% test accuracy) when we included a feature called 'duration', however 'duration' was not really viable for a predictive model because it measured how long the client engaged with the telemarketer and that is something that could only be determined after a call to the client was made.  Again, from a business objective we are striving for a model to determine in advance (before a call) is the client likely to be say Yes to the offer, so we excluded that variable (feature) in our model training (see notes on this feature in the variable description in the junyper notebook).
 The rest of the results comparing the best of the other 3 tuned models using GridSearchCV are summarized below (copied from the junyper notebook).
+
 Model Comparison Results:
                         Train Time	Train Accuracy	Test Accuracy	Best Params
 KNN	                    5.236553	0.881511	0.883694	{'n_neighbors': 9}
