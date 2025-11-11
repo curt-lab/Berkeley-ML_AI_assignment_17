@@ -8,7 +8,7 @@ The goal would be to focus the telemarketing effort on clients who are predicted
 We were given a set of 20 features in the full dataset of over 41k samples (records).  Some features related to the client and past interaction with the client.  Some related 
 to macro-economic factors likely to affect the clients decsion.  (See the variable description list in the junyper notebook)
 We set a benchmark of 87% accuracy for the majority class (clients saying No to the offer).
-Our models were able to beat that but not by a large margin.  We would probably need to do more feature engineering and data scraping to significantly improve that.
+Our models were able to beat that but not by a large margin with an accuracy score of around 89%.  We would probably need to do more feature engineering and data scraping to significantly improve that, but due to the imbalance in the classes (Yes vs. No) it might not improve that significantly.
 The most effective model in our testing was the Decision Tree classifier and it yielded around 89% accuracy on the test dataset.
 The SVM model took a long time to train and did not initially offer significant improvement, so we did not explore that model beyond the initially required investigation.
 The model did actually improve to just over 90% inferring which clients would say Yes when we included a feature called 'duration', however 'duration' was not 
